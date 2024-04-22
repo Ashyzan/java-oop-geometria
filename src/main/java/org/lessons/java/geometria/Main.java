@@ -10,13 +10,14 @@ public class Main {
 	public static void main(String[] args) {
 		
 		System.out.println("Benvenuto nell'area geometria.");
-		
-		/* Rettangolo rettangolo1 = new Rettangolo();
+		/*
+		 Rettangolo rettangolo1 = new Rettangolo();
 		rettangolo1.base = 20;
 		rettangolo1.altezza = 40;
 		rettangolo1.calcolaArea();
 		rettangolo1.calcolaPerimetro();
-		*/
+		rettangolo1.disegna();*/
+		
 		
 		// metodo Scanner permette di prendere un input dalla tastiera
 				Scanner input = new Scanner(System.in);
@@ -25,16 +26,22 @@ public class Main {
 			
 				
 				// attribuisce alla variabile nome l'input inserito dall'utente
-				int baseRettangoloUtente = input.nextInt();
-				System.out.println("La base del tuo rettangolo è " + baseRettangoloUtente);
-				int altezzaRettangoloUtente = input.nextInt();
-				System.out.println("L'altezza del tuo rettangolo è " + baseRettangoloUtente);
-				
 				Rettangolo rettangoloUtente = new Rettangolo();
+				
+				System.out.println("inserisci la base..");
+				
+				int baseRettangoloUtente = input.nextInt();
+				//System.out.println("La base del tuo rettangolo è " + baseRettangoloUtente);
+				System.out.println("inserisci l'altezza..");
+				int altezzaRettangoloUtente = input.nextInt();
+				//System.out.println("L'altezza del tuo rettangolo è " + baseRettangoloUtente);
+				
+				
 				rettangoloUtente.base = baseRettangoloUtente;
 				rettangoloUtente.altezza = altezzaRettangoloUtente;
 				rettangoloUtente.calcolaArea();
 				rettangoloUtente.calcolaPerimetro();
+				rettangoloUtente.disegna();
 				
 				
 				
