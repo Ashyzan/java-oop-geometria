@@ -32,6 +32,7 @@ public class Rettangolo {
 		System.out.println("Perimetro: " + perimetro);
 		int area = base * altezza;
 		System.out.println("area: " + area);
+		System.out.println();
 
 	
 		for ( int i = 0; i < base; i++ ) {
@@ -41,9 +42,19 @@ public class Rettangolo {
 		
 		for ( int i = 0; i < altezza-2; i++ ) {
 			System.out.println();
-			System.out.print( "o");
-	
+			String riga = "o";
+			
+			for (int j=0; j < base-2; j++) {
+				riga = riga.concat(" ");
+				
+				
+			}
+			
+			System.out.print(riga.concat("o"));
+		
 		}
+		
+		
 		System.out.println();
 		
 		for ( int i = 0; i < base; i++ ) {

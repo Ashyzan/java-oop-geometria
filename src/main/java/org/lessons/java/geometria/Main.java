@@ -25,11 +25,11 @@ public class Main {
 				System.out.println("Ciao, inserisci il valore dell'area del rettangolo");
 			
 				
-				// attribuisce alla variabile nome l'input inserito dall'utente
+				// creo una nuova istanza di Rettangolo
 				Rettangolo rettangoloUtente = new Rettangolo();
 				
 				System.out.println("inserisci la base..");
-				
+				// attribuisce alla variabile l'input inserito dall'utente
 				int baseRettangoloUtente = input.nextInt();
 				//System.out.println("La base del tuo rettangolo è " + baseRettangoloUtente);
 				System.out.println("inserisci l'altezza..");
